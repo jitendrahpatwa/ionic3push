@@ -106,8 +106,8 @@ export class MyApp {
     //return new Promise((resolve,reject)=>{
       this.http.post("https://myoptionalwebsite.000webhostapp.com/php/savetoken.php",JSON.stringify({
         "type":"pusherv3",
-        "utoken":"registration.registrationId",
-        "active":0
+        "utoken":registration.registrationId,
+        "active":1
       })
       )
       .map(res=>res.json())
